@@ -8,7 +8,7 @@
     "size": "./tbody/tr/td[2]/strong",
     "date": "./tbody/tr/td[1]/strong",
     "hot": "./tbody/tr[2]/td[3]/strong",
-    "url": "https://www.zhongzihu.com",
+    "url": "https://www.dongxingdi.com",
     "paths": {
       "time": "/list/%s/%d",
       "size": "/list_length/%s/%d",
@@ -27,7 +27,7 @@
     "size": "./div[2]/div/div[1]/small[2]/span",
     "date": "./div[2]/div/div[1]/small[1]/span",
     "hot": "./div[2]/div/div[1]/small[3]/span",
-    "url": "https://ciliguo.cc",
+    "url": "https://ciliguo.best",
     "paths": {
       "preset": "/search?q=%s&p=%d"
     },
@@ -44,7 +44,7 @@
     "size": "./div[@class='item-bar']/span[4]/b",
     "date": "./div[@class='item-bar']/span[1]/b",
     "hot": "./div[@class='item-bar']/span[2]/b",
-    "url": "http://www.btdet.com",
+    "url": "http://www.btunt.com",
     "paths": {
       "time": "/search/%s-first-asc-%d",
       "size": "/search/%s-size-desc-%d",
@@ -117,7 +117,7 @@
     "name": "./a/div[1]",
     "size": "./div[1]",
     "date": "./div[2]",
-    "url": "https://btspread.com",
+    "url": "https://btos.pw",
     "paths": {
       "preset": "/search/%s/page/%d"
     },
