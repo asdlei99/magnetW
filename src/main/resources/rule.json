@@ -1,6 +1,7 @@
 [
   {
     "site": "种子搜",
+    "proxy": true,
     "group": "//table[@class='table table-bordered table-striped']",
     "magnet": "./tbody/tr[1]/td/div/h4/a/@href",
     "name": "./tbody/tr[1]/td/div/h4/a",
@@ -19,6 +20,7 @@
   },
   {
     "site": "磁力果",
+    "proxy": true,
     "group": "//div[@class=\"card mb-4\"]",
     "magnet": "./div[1]/div[2]/div/button[1]/@data-src",
     "name": "./div[1]/div[1]/a",
@@ -35,6 +37,7 @@
   },
   {
     "site": "BT蚂蚁",
+    "proxy": true,
     "group": "//div[@id='wall']/div[@class='search-item']",
     "magnet": "./div[@class='item-title']/a/@href",
     "name": "./div[@class='item-title']/a",
@@ -53,6 +56,7 @@
   },
   {
     "site": "Nyaa（动漫）",
+    "proxy": true,
     "group": "//div[@class='table-responsive']/table/tbody/tr",
     "magnet": "./td[3]/a[2]/@href",
     "name": "./td[2]/a",
@@ -71,6 +75,7 @@
   },
   {
     "site": "Sukebei Nyaa",
+    "proxy": true,
     "group": "//div[@class='table-responsive']/table/tbody/tr",
     "magnet": "./td[3]/a[2]/@href",
     "name": "./td[2]/a",
@@ -89,6 +94,7 @@
   },
   {
     "site": "BTSOW",
+    "proxy": true,
     "group": "//div[@class='row']",
     "magnet": "./a/@href",
     "name": "./a/div[1]",
@@ -104,6 +110,7 @@
   },
   {
     "site": "idope",
+    "proxy": true,
     "group": "//div[@class=\"resultdiv\"]",
     "magnet": "./div[1]/a/@href",
     "name": "./div[1]/a",
@@ -120,6 +127,7 @@
   },
   {
     "site": "BT4G",
+    "proxy": true,
     "group": "/html/body/main/div/div[3]/div/div",
     "magnet": "./h5/a/@href",
     "name": "./h5/a",
@@ -167,6 +175,7 @@
   },
   {
     "site": "动漫花园",
+    "proxy": false,
     "group": "//*[@id=\"topic_list\"]/tbody/tr",
     "magnet": "./td[4]/a/@href",
     "name": "./td[3]/a",
@@ -195,6 +204,7 @@
   },
   {
     "site": "KickassTorrents",
+    "proxy": true,
     "group": "//tr[@class='odd']",
     "magnet": "./td[1]/div[2]/div/a/@href",
     "name": "./td[1]/div[2]/div/a",
@@ -314,6 +324,7 @@
   },
   {
     "site": " BT啦 ",
+    "proxy": true,
     "group": "//dl[@class='detail']",
     "magnet": "./dd[1]/span[6]/a[1]/@href",
     "name": "./dt[1]/a[1]",
@@ -329,6 +340,7 @@
   },
   {
     "site": " BT库 ",
+    "proxy": true,
     "group": "//dl[@class='detail']",
     "magnet": "./dd[1]/span[6]/a[1]/@href",
     "name": "./dt[1]/a[1]",
