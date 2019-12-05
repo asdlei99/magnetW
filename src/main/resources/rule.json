@@ -1,262 +1,345 @@
 [
-    {
-        "site":"种子搜",
-        "proxy":false,
-        "group":"//table[@class='table table-bordered table-striped']",
-        "magnet":"./tbody/tr[1]/td/div/h4/a/@href",
-        "name":"./tbody/tr[1]/td/div/h4/a",
-        "size":"./tbody/tr/td[2]/strong",
-        "date":"./tbody/tr/td[1]/strong",
-        "hot":"./tbody/tr[2]/td[3]/strong",
-        "url":"https://www.dongxingdi.com",
-        "paths":{
-            "time":"/list/%s/%d",
-            "size":"/list_length/%s/%d",
-            "hot":"/list_click/%s/%d"
-        },
-        "detail":{
-            "files":"//*[@id="wrapp"]/div[2]/div/div/div[3]/div[1]/div[2]/div[2]/select/option"
-        }
+  {
+    "site": "种子搜",
+    "group": "//table[@class='table table-bordered table-striped']",
+    "magnet": "./tbody/tr[1]/td/div/h4/a/@href",
+    "name": "./tbody/tr[1]/td/div/h4/a",
+    "size": "./tbody/tr[2]/td[2]/strong",
+    "date": "./tbody/tr[2]/td[1]/strong",
+    "hot": "./tbody/tr[2]/td[3]/strong",
+    "url": "https://www.dongxingdi.com",
+    "paths": {
+      "time": "/list/%s/%d",
+      "size": "/list_length/%s/%d",
+      "hot": "/list_click/%s/%d"
     },
-    {
-        "site":"磁力果",
-        "proxy":true,
-        "group":"//div[@class="card mb-4"]",
-        "magnet":"./div[1]/div[2]/div/button[1]/@data-src",
-        "name":"./div[1]/div[1]/a",
-        "size":"./div[2]/div/div[1]/small[2]/span",
-        "date":"./div[2]/div/div[1]/small[1]/span",
-        "hot":"./div[2]/div/div[1]/small[3]/span",
-        "url":"https://ciliguo.best",
-        "paths":{
-            "preset":"/search?q=%s&p=%d"
-        },
-        "detail":{
-            "files":"//div[@class="card mt-4 mb-4 card-info"]/div[2]/div[1]/div/div[1]/span"
-        }
-    },
-    {
-        "site":"BT蚂蚁",
-        "proxy":true,
-        "group":"//div[@id='wall']/div[@class='search-item']",
-        "magnet":"./div[@class='item-title']/a/@href",
-        "name":"./div[@class='item-title']/a",
-        "size":"./div[@class='item-bar']/span[4]/b",
-        "date":"./div[@class='item-bar']/span[1]/b",
-        "hot":"./div[@class='item-bar']/span[2]/b",
-        "url":"http://www.btunt.com",
-        "paths":{
-            "time":"/search/%s-first-asc-%d",
-            "size":"/search/%s-size-desc-%d",
-            "hot":"/search/%s-hot-desc-%d"
-        },
-        "detail":{
-            "files":"//*[@id="wall"]/ol/li"
-        }
-    },
-    {
-        "site":"Nyaa（动漫）",
-        "proxy":false,
-        "group":"//div[@class='table-responsive']/table/tbody/tr",
-        "magnet":"./td[3]/a[2]/@href",
-        "name":"./td[2]/a",
-        "size":"./td[4]",
-        "date":"./td[5]",
-        "hot":"./td[8]",
-        "url":"https://nyaa.si",
-        "paths":{
-            "time":"?q=%s&p=%d",
-            "size":"?q=%s&s=size&o=desc",
-            "hot":"?q=%s&s=downloads&o=desc"
-        },
-        "detail":{
-            "files":"//div[@class="torrent-file-list panel-body"]/ul/li"
-        }
-    },
-    {
-        "site":"动漫花园",
-        "proxy":false,
-        "group":"//*[@id="topic_list"]/tbody/tr",
-        "magnet":"./td[4]/a/@href",
-        "name":"./td[3]/a",
-        "size":"./td[5]",
-        "date":"./td[1]/text()",
-        "hot":"./td[8]",
-        "url":"https://dmhy.anoneko.com",
-        "paths":{
-            "time":"/topics/list/page/%d?keyword=%s"
-        },
-        "detail":{
-            "files":"//div[@class="file_list"]/ul/li"
-        }
-    },
-    {
-        "site":"Sukebei Nyaa",
-        "proxy":true,
-        "group":"//div[@class='table-responsive']/table/tbody/tr",
-        "magnet":"./td[3]/a[2]/@href",
-        "name":"./td[2]/a",
-        "size":"./td[4]",
-        "date":"./td[5]",
-        "hot":"./td[8]",
-        "url":"https://sukebei.nyaa.si",
-        "paths":{
-            "time":"?q=%s&p=%d",
-            "size":"?q=%s&s=size&o=desc",
-            "hot":"?q=%s&s=downloads&o=desc"
-        },
-        "detail":{
-            "files":"//div[@class="torrent-file-list panel-body"]/ul/li"
-        }
-    },
-    {
-        "site":"BTSOW",
-        "proxy":true,
-        "group":"//div[@class='row']",
-        "magnet":"./a/@href",
-        "name":"./a/div[1]",
-        "size":"./div[1]",
-        "date":"./div[2]",
-        "url":"https://btos.pw",
-        "paths":{
-            "preset":"/search/%s/page/%d"
-        },
-        "detail":{
-            "files":"//div[@class="detail data-list"]/div/text()"
-        }
-    },
-    {
-        "site":"idope",
-        "proxy":true,
-        "group":"//div[@class="resultdiv"]",
-        "magnet":"./div[1]/a/@href",
-        "name":"./div[1]/a",
-        "size":"./div[2]/div[3]/div[2]",
-        "date":"./div[2]/div[2]/div[2]",
-        "url":"https://idope.se",
-        "paths":{
-            "preset":"/torrent-list/%s/?p=%d",
-            "size":"/torrent-list/%s/?p=%d&o=-2"
-        },
-        "detail":{
-            "files":"//div[@class="filetag"]"
-        }
-    },
-    {
-        "site":"SkrBT",
-        "proxy":true,
-        "group":"//ul[@class='list-unstyled']",
-        "magnet":"./li[2]/a/@href",
-        "name":"./li[1]/a",
-        "size":"./li[2]/span[1]",
-        "date":"./li[2]/span[3]",
-        "hot":"./li[2]/span[4]",
-        "url":"https://www.skrbt.world",
-        "paths":{
-            "preset":"/search?keyword=%s&s=relevance&p=%d",
-            "time":"/search?keyword=%s&s=date&p=%d",
-            "size":"/search?keyword=%s&s=length&p=%d"
-        }
-    },
-    {
-        "site":"BT4G",
-        "proxy":true,
-        "group":"/html/body/main/div/div[3]/div/div",
-        "magnet":"./h5/a/@href",
-        "name":"./h5/a",
-        "size":"./span[4]/b",
-        "date":"./span[2]/b",
-        "url":"https://cn.bt4g.com",
-        "paths":{
-            "time":"/search/%s/%d",
-            "size":"/search/%s/bysize/%d",
-            "hot":"/search/%s/byrequests/%d"
-        },
-        "detail":{
-            "files":"//*[@id="wall"]/div[6]/div[2]/ol/li"
-        }
-    },
-    {
-        "site":"磁力狗",
-        "name":"./div[1]/div[1]/a[1]",
-        "url":"http://www.ciligou.co",
-        "paths":{
-            "preset":"/search?word={k}&sort=rele&p={p}",
-            "time":"/search?word={k}&sort=time&p={p}",
-            "size":"/search?word={k}&sort=length&p={p}"
-        },
-        "group":"//*[@id="Search_list_wrapper"]/li",
-        "magnet":"./div[1]/div[1]/a[1]/@href",
-        "size":"./div[2]/text()[1]",
-        "date":"./div[2]/text()[2]",
-        "hot":"./div[2]/span[1]"
-    },
-    {
-        "site":"MAG磁力站",
-        "name":"./li/span[1]",
-        "url":"http://f.cili001.com",
-        "paths":{
-            "preset":"/index/index/k/{k}/p/{p}"
-        },
-        "group":"//ul[@class='link-list']",
-        "magnet":"./li/@data-magnet",
-        "size":"./li/span[2]/span[1]",
-        "date":"./li/span[2]/span[2]"
-    },
-    {
-        "site":"磁力宝",
-        "url":"https://www.cilibao.net",
-        "paths":{
-            "preset":"/s/{k}.html",
-            "time":"/s/{k}_time_{p}.html",
-            "size":"/s/{k}_size_{p}.html"
-        },
-        "group":"//div[@class='search-item']",
-        "magnet":"./div[1]/h3[1]/a[1]/@href",
-        "size":"./div[3]/span[3]/b[1]",
-        "date":"./div[3]/span[2]/b[1]",
-        "hot":"./div[3]/span[4]/b[1]"
-    },
-    {
-        "site":"磁力管家",
-        "url":"http://p99y.com",
-        "paths":{
-            "preset":"/search/kw/{k}.html?page={p}",
-            "time":"/search/kw/{k}/order/create_time.html?page={p}"
-        },
-        "group":"//div[@class='row']",
-        "magnet":"./div[1]/h4[1]/a[1]/@href",
-        "size":"./div[2]/div[2]",
-        "date":"./div[2]/div[4]",
-        "hot":"./div[2]/div[1]"
-    },
-    {
-        "site":"KickassTorrents",
-        "group":"//tr[@class='odd']",
-        "magnet":"./td[1]/div[2]/div/a/@href",
-        "name":"./td[1]/div[2]/div/a",
-        "size":"./td[2]",
-        "date":"./td[4]",
-        "url":"https://kickasstorrents.to",
-        "paths":{
-            "preset":"/usearch/%s/%d"
-        },
-        "detail":{
-            "files":"//div[@class="dd filelist"]"
-        }
-    },
-    {
-        "site":"磁力柠檬",
-        "proxy":false,
-        "group":"//div[@class='panel panel-default border-radius']",
-        "magnet":"./div[1]/h3/a/@href",
-        "name":"./div[1]/h3/a",
-        "size":"./div[3]/h4/small/span[1]",
-        "date":"./div[3]/h4/small/span[3]",
-        "url":"https://lemencili1.xyz",
-        "paths":{
-            "time":"/search?keyword=%s&s=relevance&p=%d",
-            "size":"/search?keyword=%s&s=length&p=%d"
-        }
+    "detail": {
+      "files": "//*[@id=\"wrapp\"]/div[2]/div/div/div[3]/div[1]/div[2]/div[2]/select/option"
     }
+  },
+  {
+    "site": "磁力果",
+    "group": "//div[@class=\"card mb-4\"]",
+    "magnet": "./div[1]/div[2]/div/button[1]/@data-src",
+    "name": "./div[1]/div[1]/a",
+    "size": "./div[2]/div/div[1]/small[2]/span",
+    "date": "./div[2]/div/div[1]/small[1]/span",
+    "hot": "./div[2]/div/div[1]/small[3]/span",
+    "url": "https://www.ciliguo.best",
+    "paths": {
+      "preset": "/search?q=%s&p=%d"
+    },
+    "detail": {
+      "files": "//div[@class=\"card mt-4 mb-4 card-info\"]/div[2]/div[1]/div/div[1]/span"
+    }
+  },
+  {
+    "site": "BT蚂蚁",
+    "group": "//div[@id='wall']/div[@class='search-item']",
+    "magnet": "./div[@class='item-title']/a/@href",
+    "name": "./div[@class='item-title']/a",
+    "size": "./div[@class='item-bar']/span[4]/b",
+    "date": "./div[@class='item-bar']/span[1]/b",
+    "hot": "./div[@class='item-bar']/span[2]/b",
+    "url": "http://www.btunt.com",
+    "paths": {
+      "time": "/search/%s-first-asc-%d",
+      "size": "/search/%s-size-desc-%d",
+      "hot": "/search/%s-hot-desc-%d"
+    },
+    "detail": {
+      "files": "//*[@id=\"wall\"]/ol/li"
+    }
+  },
+  {
+    "site": "Nyaa（动漫）",
+    "group": "//div[@class='table-responsive']/table/tbody/tr",
+    "magnet": "./td[3]/a[2]/@href",
+    "name": "./td[2]/a",
+    "size": "./td[4]",
+    "date": "./td[5]",
+    "hot": "./td[8]",
+    "url": "https://nyaa.si",
+    "paths": {
+      "time": "?q=%s&p=%d",
+      "size": "?q=%s&s=size&o=desc&p=%d",
+      "hot": "?q=%s&s=downloads&o=desc&p=%d"
+    },
+    "detail": {
+      "files": "//div[@class=\"torrent-file-list panel-body\"]/ul/li"
+    }
+  },
+  {
+    "site": "Sukebei Nyaa",
+    "group": "//div[@class='table-responsive']/table/tbody/tr",
+    "magnet": "./td[3]/a[2]/@href",
+    "name": "./td[2]/a",
+    "size": "./td[4]",
+    "date": "./td[5]",
+    "hot": "./td[8]",
+    "url": "https://sukebei.nyaa.si",
+    "paths": {
+      "time": "?q=%s&p=%d",
+      "size": "?q=%s&s=size&o=desc&p=%d",
+      "hot": "?q=%s&s=downloads&o=desc&p=%d"
+    },
+    "detail": {
+      "files": "//div[@class=\"torrent-file-list panel-body\"]/ul/li"
+    }
+  },
+  {
+    "site": "BTSOW",
+    "group": "//div[@class='row']",
+    "magnet": "./a/@href",
+    "name": "./a/div[1]",
+    "size": "./div[1]",
+    "date": "./div[2]",
+    "url": "https://btos.pw",
+    "paths": {
+      "preset": "/search/%s/page/%d"
+    },
+    "detail": {
+      "files": "//div[@class=\"detail data-list\"]/div/text()"
+    }
+  },
+  {
+    "site": "idope",
+    "group": "//div[@class=\"resultdiv\"]",
+    "magnet": "./div[1]/a/@href",
+    "name": "./div[1]/a",
+    "size": "./div[2]/div[3]/div[2]",
+    "date": "./div[2]/div[2]/div[2]",
+    "url": "https://idope.se",
+    "paths": {
+      "preset": "/torrent-list/%s/?p=%d",
+      "size": "/torrent-list/%s/?p=%d&o=-2"
+    },
+    "detail": {
+      "files": "//div[@class=\"filetag\"]"
+    }
+  },
+  {
+    "site": "BT4G",
+    "group": "/html/body/main/div/div[3]/div/div",
+    "magnet": "./h5/a/@href",
+    "name": "./h5/a",
+    "size": "./span[4]/b",
+    "date": "./span[2]/b",
+    "url": "https://cn.bt4g.com",
+    "paths": {
+      "time": "/search/%s/%d",
+      "size": "/search/%s/bysize/%d",
+      "hot": "/search/%s/byrequests/%d"
+    },
+    "detail": {
+      "files": "//*[@id=\"wall\"]/div[6]/div[2]/ol/li"
+    }
+  },
+  {
+    "site": " 磁力狗",
+    "group": "//*[@id=\"Search_list_wrapper\"]/li",
+    "magnet": "./div[1]/div[1]/a[1]/@href",
+    "name": "./div[1]/div[1]/a[1]",
+    "size": "./div[2]/text()[1]",
+    "date": "./div[2]/text()[2]",
+    "hot": "./div[2]/span[1]",
+    "url": "http://www.ciligou.co",
+    "paths": {
+      "preset": "/search?word=%s&sort=rele&p=%d",
+      "time": "/search?word=%s&sort=time&p=%d",
+      "size": "/search?word=%s&sort=length&p=%d"
+    }
+  },
+  {
+    "site": " 超人搜索",
+    "group": "//article[@class='item']/div",
+    "magnet": "./a[1]/@href",
+    "name": "./a[1]",
+    "size": "./p[1]",
+    "date": "./p[1]",
+    "hot": "./p[1]",
+    "url": "https://www.crsoso.xyz",
+    "paths": {
+      "preset": "/search/%s/page-%d.html",
+      "hot": "/search-hot/%s/page-%d.html",
+      "size": "search-size/%s/page-%d.html"
+    }
+  },
+  {
+    "site": "动漫花园",
+    "group": "//*[@id=\"topic_list\"]/tbody/tr",
+    "magnet": "./td[4]/a/@href",
+    "name": "./td[3]/a",
+    "size": "./td[5]",
+    "date": "./td[1]/text()",
+    "hot": "./td[8]",
+    "url": "https://dmhy.anoneko.com",
+    "paths": {
+      "time": "/topics/list/page/%d?keyword=%s"
+    },
+    "detail": {
+      "files": "//div[@class=\"file_list\"]/ul/li"
+    }
+  },
+  {
+    "site": "MAG磁力站",
+    "group": "//ul[@class='link-list']",
+    "magnet": "./li/@data-magnet",
+    "name": "./li/span[1]",
+    "size": "./li/span[2]/span[1]",
+    "date": "./li/span[2]/span[2]",
+    "url": "http://f.cili001.com",
+    "paths": {
+      "preset": "/index/index/k/%s/p/%d"
+    }
+  },
+  {
+    "site": "KickassTorrents",
+    "group": "//tr[@class='odd']",
+    "magnet": "./td[1]/div[2]/div/a/@href",
+    "name": "./td[1]/div[2]/div/a",
+    "size": "./td[2]",
+    "date": "./td[4]",
+    "url": "https://kickasstorrents.to",
+    "paths": {
+      "preset": "/usearch/%s/%d"
+    },
+    "detail": {
+      "files": "//div[@class=\"dd filelist\"]"
+    }
+  },
+  {
+    "site": "磁力宝",
+    "group": "//div[@class='search-item']",
+    "magnet": "./div[1]/h3[1]/a[1]/@href",
+    "name": "./div[1]/h3[1]/a[1]",
+    "size": "./div[3]/span[3]/b[1]",
+    "date": "./div[3]/span[2]/b[1]",
+    "hot": "./div[3]/span[4]/b[1]",
+    "url": "https://www.cilibao.net",
+    "paths": {
+      "preset": "/s/%s.html",
+      "time": "/s/%s_time_%d.html",
+      "size": "/s/%s_size_%d.html"
+    }
+  },
+  {
+    "site": "磁力管家",
+    "group": "//div[@class='row']",
+    "magnet": "./div[1]/h4[1]/a[1]/@href",
+    "name": "./div[1]/h4[1]/a[1]",
+    "size": "./div[2]/div[2]",
+    "date": "./div[2]/div[4]",
+    "hot": "./div[2]/div[1]",
+    "url": "http://p99y.com",
+    "paths": {
+      "preset": "/search/kw/%s.html?page=%d",
+      "time": "/search/kw/%s/order/create_time.html?page=%d"
+    }
+  },
+  {
+    "site": " Sobt",
+    "group": "//div[@class='search-item']",
+    "magnet": "./div[1]/h3[1]/a[1]/@href",
+    "name": "./div[1]/h3[1]/a[1]",
+    "size": "./div[3]/span[3]/b[1]",
+    "date": "./div[3]/span[2]/b[1]",
+    "hot": "./div[3]/span[4]/b[1]",
+    "url": "http://www.sobt5.pw",
+    "paths": {
+      "preset": "q/%s.html?sort=rel&page=%d",
+      "time": "/q/%s.html?sort=time&page=%d",
+      "size": "/q/%s.html?sort=size&page=%d"
+    }
+  },
+  {
+    "site": "天天磁力",
+    "group": "//div[@class='newest-blog-item border m-top-10']",
+    "magnet": "./div[1]/div[1]/span[5]/a[1]/@href",
+    "name": "./div[1]/h3[1]/a[1]",
+    "size": "./div[1]/div[1]/span[2]",
+    "date": "./div[1]/div[1]/span[3]",
+    "hot": "./div[1]/div[1]/span[4]/i[1]",
+    "url": "http://www.ttcili8.com",
+    "paths": {
+      "preset": "/s/%s/%d-0-0.html",
+      "hot": "/s/%s/%d-2-0.html",
+      "size": "/s/%s/%d-3-0.html"
+    }
+  },
+  {
+    "site": "SSBTZZ",
+    "group": "//div[@class='search-item']",
+    "magnet": "./div[3]/a[1]/@href",
+    "name": "./div[1]/h3[1]/a[1]",
+    "size": "./div[3]/span[3]/b[1]",
+    "date": "./div[3]/span[5]/b[1]",
+    "hot": "./div[3]/span[4]/b[1]",
+    "url": "https://www.ssbtzz.com",
+    "paths": {
+      "preset": "/search/%s/default-%d.html",
+      "time": "/search/%s/time-%d.html",
+      "size": "/search/%s/size-%d.html"
+    }
+  },
+  {
+    "site": " Btdad",
+    "group": "//div[@class='ssbox']",
+    "magnet": "./div[2]/span[1]/a[1]/@href",
+    "name": "./div[1]/h3[1]/a[1]",
+    "size": "./div[2]/span[3]/b[1]",
+    "date": "./div[2]/span[4]/b[1]",
+    "hot": "./div[2]/span[5]/b[1]",
+    "url": "http://www.btdad.xyz",
+    "paths": {
+      "preset": "/search-%s-0-0-%d.html",
+      "size": "/search-%s-0-1-%d.html",
+      "time": "/search-%s-0-2-%d.html"
+    }
+  },
+  {
+    "site": "磁力蜘蛛",
+    "group": "//div[@class='search-item']",
+    "magnet": "./div[1]/h3[1]/a[1]/@href",
+    "name": "./div[1]/h3[1]/a[1]",
+    "size": "./div[3]/span[3]/b[1]",
+    "date": "./div[3]/span[2]/b[1]",
+    "hot": "./div[3]/span[4]/b[1]",
+    "url": "http://www.eclzz.com",
+    "paths": {
+      "preset": "/s/%s_rel_%d.html",
+      "time": "/s/%s_time_%d.html",
+      "size": "/s/%s_size_%d.html"
+    }
+  },
+  {
+    "site": " BT啦 ",
+    "group": "//dl[@class='detail']",
+    "magnet": "./dd[1]/span[6]/a[1]/@href",
+    "name": "./dt[1]/a[1]",
+    "size": "./ul[1]/li[1]/span[15]",
+    "date": "./dd[1]/span[4]/b[1]",
+    "hot": "./dd[1]/span[5]/b[1]",
+    "url": "https://www.sobtla.xyz",
+    "paths": {
+      "preset": "/search-%s-0-0-%d.html",
+      "size": "/search-%s-0-1-%d.html",
+      "time": "/search-%s-0-2-%d.html"
+    }
+  },
+  {
+    "site": " BT库 ",
+    "group": "//dl[@class='detail']",
+    "magnet": "./dd[1]/span[6]/a[1]/@href",
+    "name": "./dt[1]/a[1]",
+    "size": "./ul[1]/li[1]/span[15]",
+    "date": "./dd[1]/span[4]/b[1]",
+    "hot": "./dd[1]/span[5]/b[1]",
+    "url": "https://www.btku2.com",
+    "paths": {
+      "preset": "/search-%s-0-0-%d.html",
+      "size": "/search-%s-0-1-%d.html",
+      "time": "/search-%s-0-2-%d.html"
+    }
+  }
 ]
