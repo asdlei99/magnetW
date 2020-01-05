@@ -1,3 +1,2 @@
-已迁移至&nbsp;&nbsp;&nbsp;[xiandanin/magnetW](https://github.com/xiandanin/magnetW)
-
-文档页&nbsp;&nbsp;&nbsp;[magnetw.app](http://magnetw.app/)
+此页面已废弃
+### 已迁移至&nbsp;&nbsp;&nbsp;[xiandanin/magnetW](https://github.com/xiandanin/magnetW)
